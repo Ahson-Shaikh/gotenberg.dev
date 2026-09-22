@@ -92,6 +92,12 @@ services:
       # - "127.0.0.1:3000:3000"
 ```
 
+## Easypanel
+
+[Easypanel](https://easypanel.io) is a self-hosted Docker deployment platform, and Gotenberg has a one-click deployment template there: https://easypanel.io/templates/gotenberg
+
+As with any deployment, keep the service off the public internet - use Easypanel's internal networking to reach it from your other services rather than exposing a public domain.
+
 ## Kubernetes
 
 The image runs as a non-root user `gotenberg` (UID/GID **1001**). Since _8.21.0_, [arbitrary user IDs (OpenShift)](https://docs.redhat.com/en/documentation/openshift_container_platform/4.15/html/images/creating-images#enable-images-for-source-to-image_create-images) are also supported.
